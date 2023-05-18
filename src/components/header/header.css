@@ -1,0 +1,38 @@
+header {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .logo span {
+    margin-left: 10px;
+  }
+  
+  .logo button {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+  }
+  
+  .logo button:hover {
+    background-color: #eaeaea;
+  }
+  
+  .logo button:focus {
+    outline: none;
+  }
+  

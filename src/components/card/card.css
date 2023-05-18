@@ -1,0 +1,31 @@
+.card {
+    background-color: #becdeb;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .selected {
+    background-color: #eaeaea;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  
+  li {
+    margin-bottom: 3px;
+  }
+  
