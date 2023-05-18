@@ -12,6 +12,7 @@ function Home() {
   const history = useHistory();
   const location = useLocation();
   const [bands, setBands] = useState([]);
+  const [band4Selewct, setBand4Select] = useState([]);
   const [genres, setGenres] = useState([]);
   const [albums, setAlbums] = useState([]);
   const [filteredAlbums, setFilteredAlbums] = useState([]);
@@ -40,7 +41,7 @@ function Home() {
   }
   function setBandData(id) {
     const band4Data = bands.find((band) => band.id === id);
-    console.log(id, band4Data);
+    setBand4Select(band4Data);
     setSelected(id);
     const selectAlbums = albums.filter((album) => album.bandId === id);
     setFilteredAlbums(selectAlbums);
@@ -104,17 +105,9 @@ function Home() {
             <React.Fragment key={band.id}>
               {selected === band.id ? (
                 <React.Fragment>
-                  <button onClick={() => setSelected(false)}>
-                    <strong>Close</strong>
+                  <button onClick={() => setSelected(false)} >
+                  {band.name}
                   </button>
-                  <div className="card-wrapper">
-                    <Card
-                      band={band}
-                      select={selected}
-                      albumsBand={filteredAlbums}
-                      genre={genreSelect}
-                    />
-                  </div>
                 </React.Fragment>
               ) : (
                 <button key={band.id} onClick={() => setBandData(band.id)}>
@@ -125,6 +118,16 @@ function Home() {
           );
         })}
       </div>
+      {selected !== false &&
+      <div className="card-wrapper">
+        <Card
+          band={band4Selewct}
+          select={selected}
+          albumsBand={filteredAlbums}
+          genre={genreSelect}
+          />
+      </div>
+        }
       <Footer />
     </div>
   );

@@ -23,7 +23,7 @@ To run the Valkiria Records web application locally, follow these steps:
 
 1. Clone the repository: `https://github.com/Gr4L22/valkiriaRecords-devChange.git`
 2. Install the dependencies: `npm install`
-3. Start the development server: `npm start`
+3. Start the development server: `cd .\dev-challenge\  npm start`
 4. Open your web browser and navigate to `http://localhost:3000`
 
 ## Folder Structure
